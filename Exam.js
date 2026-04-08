@@ -86,17 +86,12 @@ console.log('6. task: ',objWord);
 input=3+5*2-4/2;
 console.log('calculate: ',input);
 
+//7. task
+const searchInput=document.getElementById('search')
+searchInput.addEventListener('input',debounce(()=>{
+  console.log('searched triggered')
+},300));
+
 //9. asyncronus functios
 
-async function A(){
-   await console.log('Task A Completed.')
-}
-async function B(){
-   await console.log('Task A Completed.')
-}
-async function C(){
-   await console.log('Task A Completed.')
-}
-async function All(){
-   await console.log('All Task Completed.')
-}
+task['A',"B",'C']
